@@ -19,7 +19,7 @@ A simple Book Store web application built using Spring Boot.
 1. Clone the repository
 2. Configure database details in application.properties
 3. Run the application
-4. Open browser: http://localhost:8080
+4. Open browser: http://localhost:8087/
 
 ## 📌 What I Learned
 - Spring MVC architecture
