@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Book Store</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white   " href="#">Book Store</a>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white   "        th:href="@{/}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white      ms-3  "   th:href="@{/available_books}">Available Books</a>
+        </li>
+      
+      </ul>
+
+      <a class="nav-link text-white" th:href="@{/book_register}">New Book Register</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center mt-2">
+    <h2>Welcome to Book Store</h2>
+	<div class="container p-2">
+<h6> The Book Store Application is a web-based platform developed using Spring Boot that allows users to browse, manage, 
+	and organize books efficiently. The application provides a clean and user-friendly interface where users can view available books, 
+	add new books, update book details, and remove books when required. 
+	It simplifies book management by storing all data in a structured database and displaying it dynamically on web pages.</h6><br>
+	</div>
+	<div class="container">
+	<img src="/images/bookstore.jpg " width="800px" height="420px" />
+	</div>
+</div>
+
+</body>
+</html>
